@@ -54,6 +54,11 @@ collections:
                 fields:
                   - { label: "Name", name: "name", widget: "string" }
                   - { label: "Role / Instrument", name: "role", widget: "string" }
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "select"
+                    options: ["Mic", "Keyboard", "Guitar", "Clap", "Default"]
+                    default: "Default"
                   - { label: "Photo", name: "photo", widget: "image", required: false }
 
           # ---------- PERFORMANCES SECTION ----------

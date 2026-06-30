@@ -1,92 +1,79 @@
 hero:
-  band_name: Cassette karvaan
-  tagline: Where Sound Meets Soul
-  button_text: Book Us
+  band_name: "Cassette karvaan"
+  tagline: "Where Sound Meets Soul"
+  button_text: "Book Us"
+
 about:
-  label: Who We Are
-  heading: The Story of karvaan
-  paragraph_1: Cassette karvaan is a fresh, passionate band born out of a shared
-    love for the timeless sounds. We believe music is a journey — a karvaan —
-    that carries stories, nostalgia, and pure joy.
-  paragraph_2: We started small, with a few friends who couldn't stop humming old
-    film melodies. That hum turned into rehearsals, rehearsals turned into
-    performances, and now we're bringing these golden songs to live audiences in
-    Mysuru and beyond.
+  label: "Who We Are"
+  heading: "The Story of karvaan"
+  paragraph_1: "Cassette karvaan is a fresh, passionate band born out of a shared love for the timeless sounds. We believe music is a journey — a karvaan — that carries stories, nostalgia, and pure joy."
+  paragraph_2: "We started small, with a few friends who couldn't stop humming old film melodies. That hum turned into rehearsals, rehearsals turned into performances, and now we're bringing these golden songs to live audiences in Mysuru and beyond."
   photos:
-    - image: /images/band-1.jpg
-      alt: Cassette Karvaan Band Photo 1
-    - image: /images/band-2.jpg
-      alt: Cassette Karvaan Band Photo 2
-    - image: /images/band-3.jpg
-      alt: Cassette Karvaan Band Photo 3
-    - image: /images/band-4.jpg
-      alt: Cassette Karvaan Band Photo 4
+    - image: "/images/band-1.jpg"
+      alt: "Cassette Karvaan Band Photo 1"
+    - image: "/images/band-2.jpg"
+      alt: "Cassette Karvaan Band Photo 2"
+    - image: "/images/band-3.jpg"
+      alt: "Cassette Karvaan Band Photo 3"
+    - image: "/images/band-4.jpg"
+      alt: "Cassette Karvaan Band Photo 4"
+
 lineup:
-  label: Meet the lineup
-  heading: Behind The Sound
-  paragraph: Six musicians, one shared obsession with the music that raised us —
-    meet the voices and hands behind every karvaan performance.
+  label: "Meet the lineup"
+  heading: "Behind The Sound"
+  paragraph: "Six musicians, one shared obsession with the music that raised us — meet the voices and hands behind every karvaan performance."
   members:
-    - name: Prarthana K
-      role: Vocalist
-    - name: Akshay U Prasad
-      role: Vocalist
-    - name: Shreyas S
-      role: Vocalist
-    - name: Tushar M K
-      role: Keyboard
-    - name: Deeksha Gowda
-      role: Guitarist
-    - name: Tilak U
-      role: Clap-Box
+    - name: "Prarthana K"
+      role: "Vocalist"
+      icon: "Mic"
+    - name: "Akshay U Prasad"
+      role: "Vocalist"
+      icon: "Mic"
+    - name: "Shreyas S"
+      role: "Vocalist"
+      icon: "Mic"
+    - name: "Tushar M K"
+      role: "Keyboard"
+      icon: "Keyboard"
+    - name: "Deeksha Gowda"
+      role: "Guitarist"
+      icon: "Guitar"
+    - name: "Tilak U"
+      role: "Clap-Box"
+      icon: "Clap"
+
 performances:
-  label: On Stage
-  heading: Live Performances
+  label: "On Stage"
+  heading: "Live Performances"
   shows:
     - date: 2026-05-02
-      venue: Kuppalli Kaapi — Mysuru
-      description: Our debut performance at Kuppalli Kaapi, Mysore, was pure magic.
-        Surrounded by great coffee and incredible local energy, we turned our
-        nervous excitement into an unforgettable first gig. We couldn't have
-        asked for a better crowd to kick off our musical journey!
-      status: Completed
+      venue: "Kuppalli Kaapi — Mysuru"
+      description: "Our debut performance at Kuppalli Kaapi, Mysore, was pure magic. Surrounded by great coffee and incredible local energy, we turned our nervous excitement into an unforgettable first gig. We couldn't have asked for a better crowd to kick off our musical journey!"
+      status: "Completed"
     - date: 2026-05-16
-      venue: Fisherman's Wharf — Mysuru
-      description: Our second performance brought the house down at The Fisherman's
-        Wharf, Mysore! Trading the cozy cafe vibe for a lively coastal energy,
-        we took the stage under the stars and played to an incredible,
-        high-spirited crowd. Big love to everyone who came out to catch the
-        music, dance, and support our second gig—this journey is only getting
-        better!
-      status: Completed
+      venue: "Fisherman's Wharf — Mysuru"
+      description: "Our second performance brought the house down at The Fisherman's Wharf, Mysore! Trading the cozy cafe vibe for a lively coastal energy, we took the stage under the stars and played to an incredible, high-spirited crowd. Big love to everyone who came out to catch the music, dance, and support our second gig—this journey is only getting better!"
+      status: "Completed"
     - date: 2026-05-30
-      venue: Fisherman's Wharf — Mysuru
-      description: We returned to The Fisherman's Wharf for our third performance,
-        taking the stage for a second time at the venue. The evening featured
-        another live set under the stars for the attending crowd. This marks our
-        third official show since the band's debut.
-      status: Completed
+      venue: "Fisherman's Wharf — Mysuru"
+      description: "We returned to The Fisherman's Wharf for our third performance, taking the stage for a second time at the venue. The evening featured another live set under the stars for the attending crowd. This marks our third official show since the band's debut."
+      status: "Completed"
     - date: 2026-06-26
-      venue: University of Mysore — Dept of Arts
-      description: We are pleased to announce our upcoming fourth performance, which
-        will take place at the Department of Arts, University of Mysore.
-        Following our recent engagements at local venues, this upcoming event
-        marks a significant transition to an academic and cultural setting. The
-        performance will highlight our evolving repertoire for the university
-        community.
-      status: Upcoming
+      venue: "University of Mysore — Dept of Arts"
+      description: "We are pleased to announce our upcoming fourth performance, which will take place at the Department of Arts, University of Mysore. Following our recent engagements at local venues, this upcoming event marks a significant transition to an academic and cultural setting. The performance will highlight our evolving repertoire for the university community."
+      status: "Upcoming"
+
 contact:
-  label: Get In Touch
-  heading: Book Us or Say Hello
-  paragraph: We'd love to perform at your café, event, birthday party, college
-    fest, or any gathering where good music is welcome. We're based in Mysuru
-    and open to performing across Karnataka!
-  email: cassettekarvaan@gmail.com
+  label: "Get In Touch"
+  heading: "Book Us or Say Hello"
+  paragraph: "We'd love to perform at your café, event, birthday party, college fest, or any gathering where good music is welcome. We're based in Mysuru and open to performing across Karnataka!"
+  email: "cassettekarvaan@gmail.com"
   instagram_handle: "@cassette_karvaan"
-  instagram_url: https://instagram.com/cassette_karvaan
-  contact_name: Adinath Sanil
-  phone: +91 96062 41628
+  instagram_url: "https://instagram.com/cassette_karvaan"
+  contact_name: "Adinath Sanil"
+  phone: "+91 96062 41628"
+
 footer:
-  band_name: Cassette karvaan
-  location: Mysuru, Karnataka
-  copyright: © 2026 Cassette karvaan · Made with ♫ & ❤️
+  band_name: "Cassette karvaan"
+  location: "Mysuru, Karnataka"
+  copyright: "© 2026 Cassette karvaan · Made with ♫ & ❤️"
