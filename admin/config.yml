@@ -6,11 +6,12 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "index.html"
-        label: "Home Page"
-        name: "home"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
+  - name: "announcements"
+    label: "Ticker Announcement"
+    folder: "data"
+    format: "json"
+    create: true
+    slug: "ticker"
+    fields:
+      - { label: "Show Text", name: "text", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
