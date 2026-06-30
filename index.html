@@ -1134,8 +1134,8 @@
         <span class="line1">Cassette</span>
         <span class="line2">karvaan</span>
       </h1>
-      <p class="hero-sub">Where Sound Meets Soul</p>
-      <a href="#contact" class="hero-cta-ghost">Book Us</a>
+      <p class="hero-sub" id="heroSub">Where Sound Meets Soul</p>
+      <a href="#contact" class="hero-cta-ghost" id="heroCta">Book Us</a>
     </div>
 
     <div class="hero-scroll-hint">
@@ -1152,10 +1152,10 @@
           <p class="section-label">Who We Are</p>
           <h2 class="section-title">The Story of<br/><em>karvaan</em></h2>
           <div class="divider"></div>
-          <p>
+          <p id="aboutPara1">
             Cassette karvaan is a fresh, passionate band born out of a shared love for the timeless sounds. We believe music is a journey — a karvaan — that carries stories, nostalgia, and pure joy.
           </p>
-          <p>
+          <p id="aboutPara2">
             We started small, with a few friends who couldn't stop humming old film melodies. That hum turned into rehearsals, rehearsals turned into performances, and now we're bringing these golden songs to live audiences in Mysuru and beyond.
           </p>
         </div>
@@ -1163,6 +1163,7 @@
         <div class="cassette-card roots-card">
           <!-- Slideshow using functional image tags -->
           <div class="roots-slideshow" id="rootsSlideshow">
+            <div id="slidesWrap">
             <div class="slide active">
               <img src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" alt="Cassette Karvaan Band Photo 1" loading="lazy" onerror="this.style.display='none'">
               <div class="slide-placeholder">
@@ -1191,10 +1192,11 @@
                 <span class="ph-text">Missing Image<br>Upload to <code>images/band-4.jpg</code></span>
               </div>
             </div>
+            </div>
 
             <button class="slide-arrow prev" onclick="changeSlide(-1)" aria-label="Previous photo">&#10094;</button>
             <button class="slide-arrow next" onclick="changeSlide(1)" aria-label="Next photo">&#10095;</button>
-            <div class="slide-dots">
+            <div class="slide-dots" id="slideDots">
               <span class="dot active" onclick="goToSlide(0)"></span>
               <span class="dot" onclick="goToSlide(1)"></span>
               <span class="dot" onclick="goToSlide(2)"></span>
@@ -1212,9 +1214,9 @@
       <p class="section-label">Meet the lineup</p>
       <h2 class="section-title">Behind<br><em>The Sound</em></h2>
       <div class="lineup-divider"></div>
-      <p class="lineup-tagline">Six musicians, one shared obsession with the music that raised us — meet the voices and hands behind every karvaan performance.</p>
+      <p class="lineup-tagline" id="lineupTagline">Six musicians, one shared obsession with the music that raised us — meet the voices and hands behind every karvaan performance.</p>
 
-      <div class="members-grid">
+      <div class="members-grid" id="membersGrid">
         <div class="member-card">
           <div class="member-avatar">
             <div class="avatar-ring"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></div>
@@ -1273,7 +1275,7 @@
       <h2 class="section-title">Live<br/><em>Performances</em></h2>
       <div class="divider"></div>
 
-      <div class="perf-timeline">
+      <div class="perf-timeline" id="perfTimeline">
         <div class="perf-item">
           <div class="perf-dot"></div>
           <div class="perf-card">
@@ -1338,29 +1340,29 @@
 
       <div class="contact-grid">
         <div class="contact-info">
-          <p>
+          <p id="contactPara">
             We'd love to perform at your café, event, birthday party, college fest, or any gathering where good music is welcome. We're based in Mysuru and open to performing across Karnataka!
           </p>
           <div class="contact-links">
-            <a href="mailto:cassettekarvaan@gmail.com" class="contact-link">
+            <a href="mailto:cassettekarvaan@gmail.com" class="contact-link" id="contactEmailLink">
               <div class="contact-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </div>
-              cassettekarvaan@gmail.com
+              <span id="contactEmailText">cassettekarvaan@gmail.com</span>
             </a>
 
-            <a href="https://instagram.com/cassette_karvaan" target="_blank" class="contact-link">
+            <a href="https://instagram.com/cassette_karvaan" target="_blank" class="contact-link" id="contactInstaLink">
               <div class="contact-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
               </div>
-              @cassette_karvaan
+              <span id="contactInstaText">@cassette_karvaan</span>
             </a>
             
-            <a href="tel:+91 9606241628" class="contact-link">
+            <a href="tel:+91 9606241628" class="contact-link" id="contactPhoneLink">
               <div class="contact-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               </div>
-              +91 96062 41628 - Adinath Sanil 
+              <span id="contactPhoneText">+91 96062 41628 - Adinath Sanil</span>
             </a>
           </div>
         </div>
@@ -1407,8 +1409,8 @@
   <!-- ── FOOTER ─────────────────────────────────────────── -->
   <footer>
     <span class="footer-logo">Cassette <span>karvaan</span></span>
-    <p>Mysuru, Karnataka</p>
-    <p style="margin-top:.5rem;">© 2026 Cassette karvaan · Made with ♫ &amp; ❤️</p>
+    <p id="footerLocation">Mysuru, Karnataka</p>
+    <p style="margin-top:.5rem;" id="footerCopyright">© 2026 Cassette karvaan · Made with ♫ &amp; ❤️</p>
   </footer>
 
   <script>
@@ -1423,33 +1425,36 @@
     }
 
     // ── Our Roots photo slideshow ──
-    (function() {
+    let _slideTimer;
+    function initSlideshow() {
       const slideshow = document.getElementById('rootsSlideshow');
       if (!slideshow) return;
       const slides = slideshow.querySelectorAll('.slide');
       const dots = slideshow.querySelectorAll('.dot');
+      if (!slides.length) return;
       let current = 0;
-      let timer;
+      clearInterval(_slideTimer);
 
       function showSlide(n) {
         slides[current].classList.remove('active');
-        dots[current].classList.remove('active');
+        if (dots[current]) dots[current].classList.remove('active');
         current = (n + slides.length) % slides.length;
         slides[current].classList.add('active');
-        dots[current].classList.add('active');
+        if (dots[current]) dots[current].classList.add('active');
       }
 
       window.changeSlide = function(dir) { showSlide(current + dir); resetTimer(); };
       window.goToSlide = function(n) { showSlide(n); resetTimer(); };
 
-      function startTimer() { timer = setInterval(() => showSlide(current + 1), 4500); }
-      function resetTimer() { clearInterval(timer); startTimer(); }
+      function startTimer() { _slideTimer = setInterval(() => showSlide(current + 1), 4500); }
+      function resetTimer() { clearInterval(_slideTimer); startTimer(); }
 
-      slideshow.addEventListener('mouseenter', () => clearInterval(timer));
+      slideshow.addEventListener('mouseenter', () => clearInterval(_slideTimer));
       slideshow.addEventListener('mouseleave', startTimer);
 
       startTimer();
-    })();
+    }
+    initSlideshow();
 
     // Close menu on link click
     document.querySelectorAll('#nav-links a').forEach(a => {
@@ -1516,6 +1521,140 @@
         }
       });
     }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script>
+    // ── Load content from Decap CMS data file and render it ──
+    (function () {
+      const ROLE_ICONS = {
+        default: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>'
+      };
+
+      function setText(id, value) {
+        const el = document.getElementById(id);
+        if (el && value != null && value !== '') el.textContent = value;
+      }
+
+      function formatPerfDate(dateVal) {
+        if (!dateVal) return '';
+        const d = new Date(dateVal);
+        if (isNaN(d)) return String(dateVal);
+        const day = d.getDate();
+        const suffix = (day % 10 === 1 && day !== 11) ? 'st' : (day % 10 === 2 && day !== 12) ? 'nd' : (day % 10 === 3 && day !== 13) ? 'rd' : 'th';
+        const month = d.toLocaleString('en-US', { month: 'short' }).toUpperCase();
+        return `${day}${suffix} ${month} ${d.getFullYear()}`;
+      }
+
+      function render(data) {
+        if (!data) return;
+
+        // Hero
+        if (data.hero) {
+          setText('heroSub', data.hero.tagline);
+          setText('heroCta', data.hero.button_text);
+        }
+
+        // About
+        if (data.about) {
+          setText('aboutPara1', data.about.paragraph_1);
+          setText('aboutPara2', data.about.paragraph_2);
+
+          const photos = data.about.photos || [];
+          if (photos.length) {
+            const wrap = document.getElementById('slidesWrap');
+            const dotsWrap = document.getElementById('slideDots');
+            if (wrap && dotsWrap) {
+              wrap.innerHTML = photos.map((p, i) => `
+                <div class="slide${i === 0 ? ' active' : ''}">
+                  <img src="${p.image || ''}" alt="${(p.alt || '').replace(/"/g,'&quot;')}" loading="lazy" onerror="this.style.display='none'">
+                  <div class="slide-placeholder">
+                    <span class="ph-icon">📷</span>
+                    <span class="ph-text">Missing Image</span>
+                  </div>
+                </div>
+              `).join('');
+              dotsWrap.innerHTML = photos.map((_, i) =>
+                `<span class="dot${i === 0 ? ' active' : ''}" onclick="goToSlide(${i})"></span>`
+              ).join('');
+              initSlideshow();
+            }
+          }
+        }
+
+        // Lineup
+        if (data.lineup) {
+          setText('lineupTagline', data.lineup.paragraph);
+          const members = data.lineup.members || [];
+          const grid = document.getElementById('membersGrid');
+          if (grid && members.length) {
+            grid.innerHTML = members.map(m => `
+              <div class="member-card">
+                <div class="member-avatar">
+                  <div class="avatar-ring">${ROLE_ICONS.default}</div>
+                </div>
+                <h3 class="member-name">${m.name || ''}</h3>
+                <p class="member-role"><span class="role-dot"></span>${m.role || ''}</p>
+              </div>
+            `).join('');
+          }
+        }
+
+        // Performances
+        if (data.performances) {
+          const shows = data.performances.shows || [];
+          const timeline = document.getElementById('perfTimeline');
+          if (timeline && shows.length) {
+            timeline.innerHTML = shows.map((s, i) => {
+              const badge = s.status === 'Completed'
+                ? '<span class="perf-badge">✓ Completed</span>'
+                : '<span class="perf-badge upcoming">⏳ Upcoming</span>';
+              return `
+                <div class="perf-item">
+                  <div class="perf-dot"></div>
+                  <div class="perf-card">
+                    <div class="perf-date">📅 &nbsp;Performance ${i + 1} · ${formatPerfDate(s.date)}</div>
+                    <div class="perf-venue">${s.venue || ''}</div>
+                    <p class="perf-desc">${s.description || ''}</p>
+                    ${badge}
+                  </div>
+                </div>
+              `;
+            }).join('');
+          }
+        }
+
+        // Contact
+        if (data.contact) {
+          setText('contactPara', data.contact.paragraph);
+          const emailLink = document.getElementById('contactEmailLink');
+          if (emailLink && data.contact.email) emailLink.href = 'mailto:' + data.contact.email;
+          setText('contactEmailText', data.contact.email);
+
+          const instaLink = document.getElementById('contactInstaLink');
+          if (instaLink && data.contact.instagram_url) instaLink.href = data.contact.instagram_url;
+          setText('contactInstaText', data.contact.instagram_handle);
+
+          const phoneLink = document.getElementById('contactPhoneLink');
+          if (phoneLink && data.contact.phone) phoneLink.href = 'tel:' + data.contact.phone;
+          const phoneLabel = [data.contact.phone, data.contact.contact_name].filter(Boolean).join(' - ');
+          setText('contactPhoneText', phoneLabel);
+        }
+
+        // Footer
+        if (data.footer) {
+          setText('footerLocation', data.footer.location);
+          setText('footerCopyright', data.footer.copyright);
+        }
+      }
+
+      fetch('/content/home.yml')
+        .then(res => {
+          if (!res.ok) throw new Error('home.yml not found (' + res.status + ')');
+          return res.text();
+        })
+        .then(text => render(jsyaml.load(text)))
+        .catch(err => console.warn('CMS content load skipped:', err.message));
+    })();
   </script>
 </body>
 </html>
