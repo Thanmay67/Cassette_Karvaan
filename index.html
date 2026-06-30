@@ -124,7 +124,9 @@
     .hero-orb-1 { width: 400px; height: 400px; background: rgba(244,121,59,.15); top: -10%; right: 5%; animation-delay: 0s; }
     .hero-orb-2 { width: 300px; height: 300px; background: rgba(237,172,49,.12); bottom: 5%; left: -5%; animation-delay: -3s; }
     .hero-orb-3 { width: 200px; height: 200px; background: rgba(42,123,124,.15); top: 40%; right: 20%; animation-delay: -5s; }
-
+    .hero-title .line2 {
+  text-shadow: 0 0 20px rgba(244, 121, 59, 0.3);
+}
     @keyframes float {
       0%,100% { transform: translateY(0) scale(1); }
       50%      { transform: translateY(-30px) scale(1.05); }
@@ -613,6 +615,34 @@
       font-size: .85rem;
       color: rgba(253,243,227,.35);
     }
+    nav.scrolled { 
+  background: rgba(26, 10, 5, 0.85); /* Slightly lower the opacity */
+  backdrop-filter: blur(12px);      /* Blurs the content passing underneath */
+  -webkit-backdrop-filter: blur(12px); 
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6); 
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--gold);
+  background: rgba(244, 121, 59, 0.08);
+  box-shadow: 0 0 12px rgba(237, 172, 49, 0.2);
+}
+/* Custom Scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--saffron), var(--warm-mid));
+  border-radius: 10px;
+  border: 2px solid var(--dark);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
 
     /* ── CONTACT ───────────────────────────────────────────── */
     #contact {
@@ -722,7 +752,14 @@
       box-shadow: 0 8px 24px rgba(244,121,59,.3);
     }
     .form-submit:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(244,121,59,.5); }
-
+    .contact-link:hover .contact-link-icon {
+  background: var(--saffron);
+  transform: rotate(-8deg) scale(1.1);
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+.contact-link .contact-link-icon {
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
     /* ── LINEUP SECTION ───────────────────────────────────── */
     #lineup {
       padding: 80px 0 60px;
@@ -908,6 +945,21 @@
       transition: background .25s ease, transform .25s ease;
     }
     .slide-dots .dot.active { background: var(--gold); transform: scale(1.3); }
+
+    .roots-slideshow .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transform: scale(1);
+  transition: transform 6s ease-out; /* Long transition for smooth zoom */
+}
+
+/* When the slide becomes active, trigger the scale */
+.roots-slideshow .slide.active img {
+  transform: scale(1.08);
+}
 
     /* ── LINEUP: ELEVATED STYLE ────────────────────────────── */
     .lineup-tagline {
@@ -1111,28 +1163,28 @@
           <!-- Slideshow using functional image tags -->
           <div class="roots-slideshow" id="rootsSlideshow">
             <div class="slide active">
-              <img src="images/band-1.jpg" alt="Cassette Karvaan Band Photo 1" onerror="this.style.display='none'">
+              <img src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" alt="Cassette Karvaan Band Photo 1" loading="lazy" onerror="this.style.display='none'">
               <div class="slide-placeholder">
                 <span class="ph-icon">📷</span>
                 <span class="ph-text">Missing Image<br>Upload to <code>images/band-1.jpg</code></span>
               </div>
             </div>
             <div class="slide">
-              <img src="images/band-2.jpg" alt="Cassette Karvaan Band Photo 2" onerror="this.style.display='none'">
+              <img src="https://i.pinimg.com/736x/2d/95/e5/2d95e5886fc4c65a6778b5fee94a7d59.jpg" alt="Cassette Karvaan Band Photo 2" loading="lazy" onerror="this.style.display='none'">
               <div class="slide-placeholder">
                 <span class="ph-icon">📷</span>
                 <span class="ph-text">Missing Image<br>Upload to <code>images/band-2.jpg</code></span>
               </div>
             </div>
             <div class="slide">
-              <img src="images/band-3.jpg" alt="Cassette Karvaan Band Photo 3" onerror="this.style.display='none'">
+              <img src="https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_640.jpg" alt="Cassette Karvaan Band Photo 3" loading="lazy" onerror="this.style.display='none'">
               <div class="slide-placeholder">
                 <span class="ph-icon">📷</span>
                 <span class="ph-text">Missing Image<br>Upload to <code>images/band-3.jpg</code></span>
               </div>
             </div>
             <div class="slide">
-              <img src="images/band-4.jpg" alt="Cassette Karvaan Band Photo 4" onerror="this.style.display='none'">
+              <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/silhouettes-of-hawaiian-palms-at-a-gorgeous-sunset-free-image.jpeg?w=600&quality=80" alt="Cassette Karvaan Band Photo 4" loading="lazy" onerror="this.style.display='none'">
               <div class="slide-placeholder">
                 <span class="ph-icon">📷</span>
                 <span class="ph-text">Missing Image<br>Upload to <code>images/band-4.jpg</code></span>
@@ -1325,6 +1377,11 @@
             </div>
 
             <div class="form-group">
+    <label for="phone">Contact Number</label>
+    <input type="tel" id="phone" name="phone" required placeholder="e.g., +91 99999 99999">
+  </div>
+
+            <div class="form-group">
               <label>Enquiry Type</label>
               <select name="type">
                 <option value="">Select type...</option>
@@ -1416,6 +1473,48 @@
       el.style.transition = 'opacity .5s ease, transform .5s ease';
       observer.observe(el);
     });
+
+    // ... your existing code (slideshow timer, intersection observer, etc.) ...
+
+    document.querySelectorAll('.member-card, .perf-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity .5s ease, transform .5s ease';
+      observer.observe(el);
+    });
+
+    // ── AJAX CONTACT FORM SUBMISSION (no redirect, happens in the background) ──
+    const form = document.querySelector('.contact-form');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault(); // Stop the browser from navigating to Formspree
+
+        const submitBtn = form.querySelector('.form-submit');
+        submitBtn.innerText = "Sending... 🚀";
+        submitBtn.disabled = true;
+
+        const data = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            // Smoothly swap the form out for a golden thank-you message
+            form.innerHTML = `<h3 style="color: var(--gold); text-align:center; padding: 2rem 0; line-height: 1.6;">🎵 Thank you! Your caravan booking message has been safely received. We'll tune in with you soon!</h3>`;
+          } else {
+            throw new Error();
+          }
+        } catch (error) {
+          submitBtn.innerText = "Send Message 🎵";
+          submitBtn.disabled = false;
+          alert("Oops! There was a problem sending your message. Please check your internet connection and try again.");
+        }
+      });
+    }
   </script>
 </body>
 </html>
