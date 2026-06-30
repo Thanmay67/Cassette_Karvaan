@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cassette Karvaan - Admin Panel</title>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</head>
+<body>
+  <script>
+    // This is the configuration for the band dashboard form fields
+    CMS.init({
+      config: {
+        backend: {
+          name: 'git-gateway',
+          branch: 'main', // Make sure this matches your main code repository branch
+        },
+        media_folder: 'images', // Where photos uploaded by the band are saved
+        public_folder: 'images',
+        collections: [
+          {
+            name: 'shows',
+            label: 'Live Shows & Gigs',
+            folder: '_data/shows', // Where show info will be stored as files
+            create: true,
+            slug: '{{year}}-{{month}}-{{day}}-{{title}}',
+            fields: [
+              { label: 'Venue Name', name: 'title', widget: 'string' },
+              { label: 'Show Date', name: 'date', widget: 'date', format: 'YYYY-MM-DD' },
+              { label: 'City / Location', name: 'location', widget: 'string', default: 'Mysuru, Karnataka' },
+              { label: 'Performance Details', name: 'description', widget: 'text' },
+              { 
+                label: 'Status', 
+                name: 'status', 
+                widget: 'select', 
+                options: ['Completed', 'Upcoming'] 
+              }
+            ]
+          },
+          {
+            name: 'lineup',
+            label: 'Band Members',
+            folder: '_data/lineup',
+            create: true,
+            slug: '{{title}}',
+            fields: [
+              { label: 'Artist Name', name: 'title', widget: 'string' },
+              { label: 'Instrument / Role', name: 'role', widget: 'string' },
+              { label: 'Avatar Profile Picture', name: 'image', widget: 'image', required: false }
+            ]
+          }
+        ]
+      }
+    });
+  </script>
+</body>
+</html>
