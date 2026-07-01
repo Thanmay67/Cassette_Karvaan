@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: thanmay67/cassette_karvaan
+  repo: Thanmay67/Cassette_Karvaan
   branch: main
 
 media_folder: "images"
